@@ -1,33 +1,33 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
-import { AppComponent } from './app.component';
-import { NavComponent } from './nav/nav.component';
-import { NotFoundComponent } from './not-found/not-found.component';
+import { AppComponent } from "./app.component";
+import { NavComponent } from "./nav/nav.component";
+import { NotFoundComponent } from "./not-found/not-found.component";
 
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from "./home/home.component";
 
-import { ProductsComponent } from './products/products.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { ProductFormComponent } from './product-form/product-form.component';
+import { ProductsComponent } from "./products/products.component";
+import { ProductDetailComponent } from "./product-detail/product-detail.component";
+import { ProductFormComponent } from "./product-form/product-form.component";
 
-import { ProductsService } from './services/products.service';
-import { AboutComponent } from './about/about.component';
+import { ProductsService } from "./services/products.service";
+import { AboutComponent } from "./about/about.component";
 
-import { SearchProducts } from './pipes/search-products.pipe';
+import { SearchProducts } from "./pipes/search-products.pipe";
 
 const appRoutes: Routes = [
-  { path: 'products', component: ProductsComponent },
-  { path: 'products/new', component: ProductFormComponent },
-  { path: 'products/:id', component: ProductDetailComponent },
-  { path: 'products/:id/edit', component: ProductFormComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'not-found', component: NotFoundComponent },
-  { path: '', component: HomeComponent },
-  { path: '**', redirectTo: '/not-found' }
+  { path: "products", component: ProductsComponent },
+  { path: "products/new", component: ProductFormComponent },
+  { path: "products/:id", component: ProductDetailComponent },
+  { path: "products/:id/edit", component: ProductFormComponent },
+  { path: "about", component: AboutComponent },
+  { path: "not-found", component: NotFoundComponent },
+  { path: "", component: HomeComponent },
+  { path: "**", redirectTo: "/not-found" }
 ];
 
 @NgModule({
